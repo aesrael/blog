@@ -68,3 +68,5 @@ export async function generateStaticParams() {
     slug: post.slug,
   }))
 }
+
+export const runtime = process.env.NODE_ENV === 'production' ? 'edge' : 'nodejs'
