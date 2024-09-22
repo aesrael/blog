@@ -17,4 +17,5 @@ export default async function Index() {
   )
 }
 
-export const runtime = process.env.NODE_ENV === 'production' ? 'edge' : 'nodejs'
+export const runtime =
+  process.env.NODE_ENV === 'development' ? 'nodejs' : 'edge'

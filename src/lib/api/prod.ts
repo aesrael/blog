@@ -20,7 +20,7 @@ export async function getPostBySlug(slug: string) {
     }
     postContent = await res.text()
   } catch (err) {
-    console.error('ERROR: err')
+    console.error(`ERROR: ${err}`)
     return null
   }
 
